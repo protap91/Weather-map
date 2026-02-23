@@ -1,0 +1,126 @@
+/* Page */
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: radial-gradient(circle at 30% 20%, #0a0f1f, #000);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.app-title {
+  position: absolute;
+  top: 30px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.85);
+  text-transform: camelcase;
+}
+/* Card */
+.weather-card {
+  width: 320px;
+  padding: 28px 26px 26px;
+  border-radius: 24px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(255,255,255,0.08),
+    rgba(255,255,255,0.02)
+  );
+
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255,255,255,0.12);
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,0.8),
+    inset 0 1px 0 rgba(255,255,255,0.15);
+
+  text-align: center;
+}
+
+/* Search */
+.weather-search {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.weather-search input {
+  flex: 1;
+  padding: 11px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.06);
+  color: #fff;
+  outline: none;
+  font-size: 14px;
+  backdrop-filter: blur(10px);
+}
+
+.weather-search input::placeholder {
+  color: rgba(255,255,255,0.55);
+}
+
+.weather-search button {
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,200,255,0.45);
+  background: rgba(0,200,255,0.18);
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.25s;
+}
+
+.weather-search button:hover {
+  background: rgba(0,200,255,0.35);
+  box-shadow: 0 0 14px rgba(0,200,255,0.5);
+}
+
+/* Main weather */
+.weather-main h2 {
+  margin: 8px 0 0;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.temp {
+  font-size: 64px;
+  font-weight: 700;
+  margin: 6px 0;
+  text-shadow: 0 0 18px rgba(0,200,255,0.4);
+}
+
+.desc {
+  font-size: 15px;
+  opacity: 0.85;
+  margin-bottom: 14px;
+}
+/* weather icon */
+.weather-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.weather-icon img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.6));
+}
+
+/* Details */
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  font-size: 20px;
+  opacity: 0.9;
+}
